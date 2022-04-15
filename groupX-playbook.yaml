@@ -1,0 +1,9 @@
+---
+- name: This is main assignment Playbook Salman
+  hosts: linux
+  roles:
+    - datadisk
+    - users
+    - system_profile
+    - webserver
+

@@ -1,0 +1,17 @@
+[linux]
+linux17077.canadacentral.cloudapp.azure.com
+linux27077.canadacentral.cloudapp.azure.com
+
+[windows]
+winvm7077
+
+[all:children]
+linux
+windows
+
+[windows:vars]
+ansible_user = adminuser
+ansible_password =  "P@$$w0rd1234!"
+ansible_connection = winrm
+ansible_winrm_transport = ntlm
+ansible_winrm_server_cert_validation = ignore
